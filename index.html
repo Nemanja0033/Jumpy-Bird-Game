@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jumppy Bird</title>
+<link rel="stylesheet" href="src/css/bootstrap.css">
+<link rel="stylesheet" href="src/css/game.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+<audio id="flapSound" src="assets/t"></audio>
+<audio id="crashSound" src="/sounds/crash.mp3"></audio>
+<audio id="scoreSound" src="/sounds/score.mp3"></audio>
+<audio id="themeSound" src="/theme/theme.mp3"></audio>
+</head>
+<body>
+  
+  <div id="game-display">
+    <section id="loadingscreen">
+      <img class="loadingscreen-logo" src="assets/img/jumppybird-logo.png" alt="">
+    </section>
+      <br><br>
+      <div id="game-canvas" class="container">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                  <canvas id="gameCanvas" width="400" height="400"></canvas>
+              </div>
+          </div>
+      </div>
+  </div>
+
+     
+
+
+<script src="src/js/gamelogic.js"></script>
+</body>
+</html>

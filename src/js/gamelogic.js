@@ -97,6 +97,20 @@ function update() {
     requestAnimationFrame(update);
 }
 
+document.addEventListener('click', function() {
+    if (!gameStarted) {
+        gameStarted = true;
+        requestAnimationFrame(update);
+        themeSound.currentTime = 0;
+        themeSound.play();
+    }
+    if (!isGameOver) {
+        bird.speedY = -3.5; 
+        flapSound.currentTime = 0;
+        flapSound.play();
+    }
+});
+
 document.addEventListener('keydown', function() {
     if (!gameStarted) {
         gameStarted = true;
@@ -111,5 +125,4 @@ document.addEventListener('keydown', function() {
     }
 });
 
-// Start the game loop
 update();

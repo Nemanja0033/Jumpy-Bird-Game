@@ -11,10 +11,10 @@ let score = 0;
 let gameStarted = false;
 canvas.width = 900;
 canvas.height = 500;
-const flapSound = new Audio('/sounds/flap.mp3');
-const crashSound = new Audio('/sounds/crash.mp3');
-const scoreSound = new Audio('/sounds/score.mp3');
-const themeSound = new Audio('/theme/theme.mp3');
+const flapSound = new Audio('../assets/sounds/flap.mp3');
+const crashSound = new Audio('../assets/sounds/crash.mp3');
+const scoreSound = new Audio('../assets/sounds/score.mp3');
+const themeSound = new Audio('../assets/theme/theme.mp3');
 birdImg.onload = function() {
     update();
 };
@@ -27,7 +27,7 @@ function drawMenu() {
 }
 
 function drawBird() {
-    ctx.drawImage(birdImg, bird.x, bird.y, 60, 60); // Draw the bird image
+    ctx.drawImage(birdImg, bird.x, bird.y, 60, 60);
 }
 
 function drawObstacles() {
